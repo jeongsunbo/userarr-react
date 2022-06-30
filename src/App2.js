@@ -43,13 +43,13 @@ function reducer(state,action){
     case "CREATE_USER":
     return {
       inputs: initialState.inputs,
-      users: state.users.concat(action.user),
+        users: state.users.concat(action.user),
       // users: [...state.users, user]랑 같음
     };
     case "DELETE_USER":
     return {
       ...state, 
-      users: state.users.filter( user => user.id !== action.id ),
+        users: state.users.filter( user => user.id !== action.id ),
     };
     case "ACTIVE_USER":
     return {
